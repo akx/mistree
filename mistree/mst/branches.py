@@ -4,11 +4,8 @@
 import os
 import sys
 
-dir_path = os.path.dirname(os.path.realpath(__file__))
-sys.path.append(dir_path[:-3] + '/coordinates/')
-
 import numpy as np
-import coordinate_utility
+from ..coordinates import coordinate_utility
 
 
 def get_branch_index(edge_index, edge_degree, branch_cutting_frequency=1000):

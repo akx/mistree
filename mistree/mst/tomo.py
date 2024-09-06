@@ -3,12 +3,8 @@
 
 import os
 import sys
-
-dir_path = os.path.dirname(os.path.realpath(__file__))
-sys.path.append(dir_path[:-3] + '/coordinates/')
-
 from . import graph
-import coordinate_utility
+from ..coordinates import coordinate_utility
 
 
 def convert_tomo_knn_length2angle(k_nearest_neighbour_graph, number_of_nodes):
