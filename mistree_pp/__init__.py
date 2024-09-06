@@ -1,4 +1,5 @@
 name = "mistree"
+__version__ = "1.2.1"
 
 # coordinate utility functions
 from .coordinates.coordinate_utility import spherical_2_cartesian

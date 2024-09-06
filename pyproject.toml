@@ -1,0 +1,50 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mistree-pp"
+dynamic = ["version"]
+description = "A python package for constructing and analysing the minimum spanning tree"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=2.7"
+authors = [
+    { name = "Krishna Naidoo", email = "krishna.naidoo.11@ucl.ac.uk" },
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Fortran",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Astronomy",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+dependencies = [
+    "matplotlib",
+    "numpy",
+    "scikit-learn",
+    "scipy",
+]
+
+[project.urls]
+Homepage = "https://knaidoo29.github.io/mistreedoc/"
+
+[tool.hatch.version]
+path = "mistree_pp/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/mistree_pp",
+]
