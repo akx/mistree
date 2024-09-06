@@ -10,7 +10,7 @@ from ..coordinates import coordinate_utility
 from . import construct
 from . import stats
 from . import branches
-#from . import density as dens
+from . import density as dens
 from . import partition
 
 

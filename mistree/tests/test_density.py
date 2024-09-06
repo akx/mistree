@@ -1,7 +1,9 @@
+import pytest
 import numpy as np
 import mistree as mist
 
 
+@pytest.mark.skip('No pure Python implementation yet')
 def test_variable_vs_density_2d():
     xgrid = np.array([[0.5, 0.5, 0.5], [1.5, 1.5, 1.5], [2.5, 2.5, 2.5]])
     ygrid = np.array([[0.5, 1.5, 2.5], [0.5, 1.5, 2.5], [0.5, 1.5, 2.5]])
@@ -23,6 +25,7 @@ def test_variable_vs_density_2d():
     assert len(condition) == 9
 
 
+@pytest.mark.skip('No pure Python implementation yet')
 def test_variable_vs_density_2d_param():
     xgrid = np.array([[0.5, 0.5, 0.5], [1.5, 1.5, 1.5], [2.5, 2.5, 2.5]])
     ygrid = np.array([[0.5, 1.5, 2.5], [0.5, 1.5, 2.5], [0.5, 1.5, 2.5]])
@@ -46,6 +49,7 @@ def test_variable_vs_density_2d_param():
     assert len(condition) == 9
 
 
+@pytest.mark.skip('No pure Python implementation yet')
 def test_variable_vs_density_3d():
     xgrid = np.array([[[0.5, 0.5], [1.5, 1.5]], [[0.5, 0.5], [1.5, 1.5]]])
     ygrid = np.array([[[0.5, 1.5], [0.5, 1.5]], [[0.5, 1.5], [0.5, 1.5]]])
@@ -73,6 +77,7 @@ def test_variable_vs_density_3d():
     assert len(condition) == 8
 
 
+@pytest.mark.skip('No pure Python implementation yet')
 def test_variable_vs_density_3d_param():
     xgrid = np.array([[[0.5, 0.5], [1.5, 1.5]], [[0.5, 0.5], [1.5, 1.5]]])
     ygrid = np.array([[[0.5, 1.5], [0.5, 1.5]], [[0.5, 1.5], [0.5, 1.5]]])

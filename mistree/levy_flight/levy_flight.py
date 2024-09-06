@@ -2,7 +2,6 @@
 # flight-like distributions.
 
 import numpy as np
-from . import utility_random_walk as random_walk
 
 
 def _get_randoms_sphere(size):
@@ -59,6 +58,8 @@ def get_random_flight(steps, mode='3D', box_size=75., periodic=True):
     _size : int
         The size of the distribution, 1 + size of the step_sizes array.
     """
+    from . import utility_random_walk as random_walk
+
     _size = len(steps)
     if periodic is False:
         box_size = None

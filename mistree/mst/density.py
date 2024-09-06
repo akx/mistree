@@ -1,7 +1,6 @@
 # 'density.py' compares the density of particles in cells to another variable.
 
 import numpy as np
-from . import utility_density
 
 
 def variable_vs_density(x, y, dx, x_param, y_param, param, box_size, z=None, z_param=None, mode='2D',
@@ -36,6 +35,7 @@ def variable_vs_density(x, y, dx, x_param, y_param, param, box_size, z=None, z_p
     -----
     Extend for use on tomographic or spherical polar data sets.
     """
+    from . import utility_density
     xx = np.arange(dx / 2., box_size + dx / 2., dx)
     condition = np.where(xx < box_size)[0]
     xx = xx[condition]

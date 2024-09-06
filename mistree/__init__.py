@@ -9,9 +9,9 @@ from .coordinates.coordinate_utility import celestial_2_unit_sphere
 from .coordinates.coordinate_utility import perpendicular_distance_2_angle
 
 # # levy flight distributions
-# from .levy_flight.levy_flight import get_random_flight
-# from .levy_flight.levy_flight import get_levy_flight
-# from .levy_flight.levy_flight import get_adjusted_levy_flight
+from .levy_flight.levy_flight import get_random_flight
+from .levy_flight.levy_flight import get_levy_flight
+from .levy_flight.levy_flight import get_adjusted_levy_flight
 
 # mst - branch functions
 from .mst.branches import get_branch_index
@@ -24,7 +24,7 @@ from .mst.branches import get_branch_shape
 from .mst.construct import construct_mst
 
 # # mst - density vs variable functions
-# from .mst.density import variable_vs_density
+from .mst.density import variable_vs_density
 
 # mst - graph functions
 from .mst.graph import graph2data

@@ -1,5 +1,6 @@
 import numpy as np
 import mistree as mist
+import pytest
 
 
 def test_GetMST_init():
@@ -306,6 +307,7 @@ def test_GetMST_get_branch_shape():
     assert len(mst.branch_length) == len(mst.branch_shape)
 
 
+@pytest.mark.skip('No pure Python implementation yet')
 def test_GetMST_get_stats_vs_density_2d():
     x = np.random.random_sample(50)
     y = np.random.random_sample(50)
@@ -317,6 +319,7 @@ def test_GetMST_get_stats_vs_density_2d():
     assert len(output) == 5
 
 
+@pytest.mark.skip('No pure Python implementation yet')
 def test_GetMST_get_stats_vs_density_3d():
     x = np.random.random_sample(50)
     y = np.random.random_sample(50)

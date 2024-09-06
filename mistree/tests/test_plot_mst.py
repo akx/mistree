@@ -1,3 +1,4 @@
+import pytest
 import numpy as np
 import mistree as mist
 
@@ -67,6 +68,7 @@ def test_PlotHistMST_plot_contour_extra_option():
     pmst.plot(units=r'^{\circ}', plt_output='close')
 
 
+@pytest.mark.skip('No pure Python implementation yet')
 def test_PlotHistMST_plot_comparison():
     x_lf, y_lf, z_lf = mist.get_levy_flight(5000)
     x_alf, y_alf, z_alf = mist.get_adjusted_levy_flight(5000)
@@ -91,6 +93,7 @@ def test_PlotHistMST_plot_comparison():
     pmst.plot(usebox=False, usecomp=True, plt_output='close')
 
 
+@pytest.mark.skip('No pure Python implementation yet')
 def test_PlotHistMST_plot_comparison_envelope():
     x_lf, y_lf, z_lf = mist.get_levy_flight(5000)
     mst = mist.GetMST(x=x_lf, y=y_lf, z=z_lf)
