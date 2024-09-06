@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "mistree-pp"
+name = "mistree"
 dynamic = ["version"]
 description = "A python package for constructing and analysing the minimum spanning tree"
 readme = "README.md"
@@ -42,9 +42,9 @@ dependencies = [
 Homepage = "https://knaidoo29.github.io/mistreedoc/"
 
 [tool.hatch.version]
-path = "mistree_pp/__init__.py"
+path = "mistree/__init__.py"
 
 [tool.hatch.build.targets.sdist]
 include = [
-    "/mistree_pp",
+    "/mistree",
 ]
